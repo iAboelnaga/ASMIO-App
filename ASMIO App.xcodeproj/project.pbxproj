@@ -10,10 +10,9 @@
 		20CE67BB8C2C70DFCB63F28D /* Pods_ASMIO_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DECE4745ED8EB648AAFFCA /* Pods_ASMIO_App.framework */; };
 		565270C427D3F09500284853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565270C327D3F09500284853 /* AppDelegate.swift */; };
 		565270C627D3F09500284853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565270C527D3F09500284853 /* SceneDelegate.swift */; };
-		565270C827D3F09500284853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565270C727D3F09500284853 /* ViewController.swift */; };
-		565270CB27D3F09500284853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565270C927D3F09500284853 /* Main.storyboard */; };
 		565270CD27D3F09700284853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565270CC27D3F09700284853 /* Assets.xcassets */; };
 		565270D027D3F09700284853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565270CE27D3F09700284853 /* LaunchScreen.storyboard */; };
+		565270E127D4C14100284853 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565270E027D4C14100284853 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +21,10 @@
 		565270C027D3F09500284853 /* ASMIO App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASMIO App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		565270C327D3F09500284853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		565270C527D3F09500284853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		565270C727D3F09500284853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		565270CA27D3F09500284853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		565270CC27D3F09700284853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565270CF27D3F09700284853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565270D127D3F09700284853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565270E027D4C14100284853 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F73AC1757C3B6353E7F01D52 /* Pods-ASMIO App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASMIO App.debug.xcconfig"; path = "Target Support Files/Pods-ASMIO App/Pods-ASMIO App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +46,6 @@
 				F73AC1757C3B6353E7F01D52 /* Pods-ASMIO App.debug.xcconfig */,
 				477C98F0A525E1278F40EADC /* Pods-ASMIO App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +70,86 @@
 		565270C227D3F09500284853 /* ASMIO App */ = {
 			isa = PBXGroup;
 			children = (
-				565270C327D3F09500284853 /* AppDelegate.swift */,
-				565270C527D3F09500284853 /* SceneDelegate.swift */,
-				565270C727D3F09500284853 /* ViewController.swift */,
-				565270C927D3F09500284853 /* Main.storyboard */,
-				565270CC27D3F09700284853 /* Assets.xcassets */,
-				565270CE27D3F09700284853 /* LaunchScreen.storyboard */,
+				565270D727D4B33200284853 /* Models */,
+				565270D927D4B36800284853 /* AppDelegates */,
+				565270D827D4B34500284853 /* Modules */,
+				565270DB27D4B38800284853 /* Networking */,
+				565270DA27D4B37600284853 /* Common */,
+				565270DC27D4B3A200284853 /* SupportingFiles */,
 				565270D127D3F09700284853 /* Info.plist */,
 			);
 			path = "ASMIO App";
+			sourceTree = "<group>";
+		};
+		565270D727D4B33200284853 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		565270D827D4B34500284853 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		565270D927D4B36800284853 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				565270C327D3F09500284853 /* AppDelegate.swift */,
+				565270C527D3F09500284853 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		565270DA27D4B37600284853 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		565270DB27D4B38800284853 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		565270DC27D4B3A200284853 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				565270DD27D4B3FF00284853 /* LaunchScreen */,
+				565270DE27D4B41F00284853 /* Assets */,
+				565270DF27D4B43100284853 /* Fonts */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		565270DD27D4B3FF00284853 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				565270CE27D3F09700284853 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		565270DE27D4B41F00284853 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				565270CC27D3F09700284853 /* Assets.xcassets */,
+				565270E027D4C14100284853 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		565270DF27D4B43100284853 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		6D93DB83F9174D74ADCAC766 /* Frameworks */ = {
@@ -152,9 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565270E127D4C14100284853 /* Colors.xcassets in Resources */,
 				565270D027D3F09700284853 /* LaunchScreen.storyboard in Resources */,
 				565270CD27D3F09700284853 /* Assets.xcassets in Resources */,
-				565270CB27D3F09500284853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565270C827D3F09500284853 /* ViewController.swift in Sources */,
 				565270C427D3F09500284853 /* AppDelegate.swift in Sources */,
 				565270C627D3F09500284853 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,14 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		565270C927D3F09500284853 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				565270CA27D3F09500284853 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		565270CE27D3F09700284853 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
