@@ -13,6 +13,7 @@
 		565270CD27D3F09700284853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565270CC27D3F09700284853 /* Assets.xcassets */; };
 		565270D027D3F09700284853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565270CE27D3F09700284853 /* LaunchScreen.storyboard */; };
 		565270E127D4C14100284853 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565270E027D4C14100284853 /* Colors.xcassets */; };
+		565270E327D4C41800284853 /* lionel_text_steam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 565270E227D4C41800284853 /* lionel_text_steam.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		565270CF27D3F09700284853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565270D127D3F09700284853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		565270E027D4C14100284853 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		565270E227D4C41800284853 /* lionel_text_steam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lionel_text_steam.ttf; sourceTree = "<group>"; };
+		565270E427D4C42200284853 /* Purissima-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Purissima-Bold.ttf"; sourceTree = "<group>"; };
 		F73AC1757C3B6353E7F01D52 /* Pods-ASMIO App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASMIO App.debug.xcconfig"; path = "Target Support Files/Pods-ASMIO App/Pods-ASMIO App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +151,8 @@
 		565270DF27D4B43100284853 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				565270E227D4C41800284853 /* lionel_text_steam.ttf */,
+				565270E427D4C42200284853 /* Purissima-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				565270E127D4C14100284853 /* Colors.xcassets in Resources */,
+				565270E327D4C41800284853 /* lionel_text_steam.ttf in Resources */,
 				565270D027D3F09700284853 /* LaunchScreen.storyboard in Resources */,
 				565270CD27D3F09700284853 /* Assets.xcassets in Resources */,
 			);
