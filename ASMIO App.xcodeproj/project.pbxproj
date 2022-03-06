@@ -37,6 +37,11 @@
 		5652711927D4C6DD00284853 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652710327D4C6DC00284853 /* UIViewController+Ext.swift */; };
 		5652711A27D4C6DD00284853 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652710427D4C6DC00284853 /* UIView+Ext.swift */; };
 		5652711B27D4C6DD00284853 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652710627D4C6DD00284853 /* Utils.swift */; };
+		5652711E27D4D55F00284853 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652711D27D4D55F00284853 /* NetworkConstants.swift */; };
+		5652712027D4D5A700284853 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652711F27D4D5A700284853 /* MyError.swift */; };
+		5652712227D4D5C400284853 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652712127D4D5C400284853 /* Api.swift */; };
+		5652712427D4D5F900284853 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652712327D4D5F900284853 /* Requestable.swift */; };
+		5652712627D4D6AC00284853 /* CategoriesAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652712527D4D6AC00284853 /* CategoriesAPIs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,11 @@
 		5652710327D4C6DC00284853 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		5652710427D4C6DC00284853 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		5652710627D4C6DD00284853 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5652711D27D4D55F00284853 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		5652711F27D4D5A700284853 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
+		5652712127D4D5C400284853 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		5652712327D4D5F900284853 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		5652712527D4D6AC00284853 /* CategoriesAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesAPIs.swift; sourceTree = "<group>"; };
 		F73AC1757C3B6353E7F01D52 /* Pods-ASMIO App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASMIO App.debug.xcconfig"; path = "Target Support Files/Pods-ASMIO App/Pods-ASMIO App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +179,11 @@
 		565270DB27D4B38800284853 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5652711C27D4D53D00284853 /* APIs */,
+				5652711D27D4D55F00284853 /* NetworkConstants.swift */,
+				5652711F27D4D5A700284853 /* MyError.swift */,
+				5652712127D4D5C400284853 /* Api.swift */,
+				5652712327D4D5F900284853 /* Requestable.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -298,6 +313,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		5652711C27D4D53D00284853 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5652712527D4D6AC00284853 /* CategoriesAPIs.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		6D93DB83F9174D74ADCAC766 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5652711E27D4D55F00284853 /* NetworkConstants.swift in Sources */,
+				5652712427D4D5F900284853 /* Requestable.swift in Sources */,
+				5652712627D4D6AC00284853 /* CategoriesAPIs.swift in Sources */,
 				5652711727D4C6DD00284853 /* UIColor+Ext.swift in Sources */,
 				5652710727D4C6DD00284853 /* BaseViewController.swift in Sources */,
 				5652711827D4C6DD00284853 /* UIFonts+Ext.swift in Sources */,
@@ -445,7 +471,9 @@
 				5652710F27D4C6DD00284853 /* RoundedImageView.swift in Sources */,
 				5652710B27D4C6DD00284853 /* TopRoundedView.swift in Sources */,
 				5652711527D4C6DD00284853 /* UIScrollView+Ext.swift in Sources */,
+				5652712027D4D5A700284853 /* MyError.swift in Sources */,
 				5652711627D4C6DD00284853 /* String+Ext.swift in Sources */,
+				5652712227D4D5C400284853 /* Api.swift in Sources */,
 				5652710E27D4C6DD00284853 /* SelfSizedTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
