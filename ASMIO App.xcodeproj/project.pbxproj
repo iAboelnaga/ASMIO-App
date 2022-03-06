@@ -14,6 +14,8 @@
 		565270D027D3F09700284853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565270CE27D3F09700284853 /* LaunchScreen.storyboard */; };
 		565270E127D4C14100284853 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565270E027D4C14100284853 /* Colors.xcassets */; };
 		565270E327D4C41800284853 /* lionel_text_steam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 565270E227D4C41800284853 /* lionel_text_steam.ttf */; };
+		565270E627D4C53B00284853 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565270E527D4C53B00284853 /* ResponseModel.swift */; };
+		565270E827D4C58700284853 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565270E727D4C58700284853 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		565270E027D4C14100284853 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		565270E227D4C41800284853 /* lionel_text_steam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lionel_text_steam.ttf; sourceTree = "<group>"; };
 		565270E427D4C42200284853 /* Purissima-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Purissima-Bold.ttf"; sourceTree = "<group>"; };
+		565270E527D4C53B00284853 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		565270E727D4C58700284853 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F73AC1757C3B6353E7F01D52 /* Pods-ASMIO App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASMIO App.debug.xcconfig"; path = "Target Support Files/Pods-ASMIO App/Pods-ASMIO App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 		565270D727D4B33200284853 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				565270E527D4C53B00284853 /* ResponseModel.swift */,
+				565270E727D4C58700284853 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				565270C427D3F09500284853 /* AppDelegate.swift in Sources */,
+				565270E827D4C58700284853 /* Product.swift in Sources */,
+				565270E627D4C53B00284853 /* ResponseModel.swift in Sources */,
 				565270C627D3F09500284853 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
