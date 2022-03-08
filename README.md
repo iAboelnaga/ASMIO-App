@@ -20,7 +20,7 @@ I used the MVVM structure with use cases to cleanly achieve separation of concer
 
 Using enum is very pretty as I can set the cases and extend these cases with variables, I used them in
 - Managing view states 
-- Listing differrent categories and countries 
+- Listing differrent SortOptions and RatingType 
 - Build Alamofire network request
 
 ## Pods
