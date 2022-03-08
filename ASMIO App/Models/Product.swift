@@ -55,7 +55,7 @@ struct Product: Codable {
 
 // MARK: - ProductVariation
 struct ProductVariation: Codable {
-    
+    //TODO
 }
 
 // MARK: - BaseImage

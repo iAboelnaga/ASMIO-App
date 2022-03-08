@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="SortTableViewCell" customModule="ASMIO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLB-9f-8ct">
+                        <rect key="frame" x="0.0" y="18" width="397" height="84"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-eI-g6c">
+                        <rect key="frame" x="407" y="50" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="OLo-zJ-fMF"/>
+                            <constraint firstAttribute="width" constant="20" id="S67-mp-dF7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="dLB-9f-8ct" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Cab-0x-Na3"/>
+                    <constraint firstItem="dLB-9f-8ct" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T0U-SP-J2E"/>
+                    <constraint firstItem="AZv-eI-g6c" firstAttribute="centerY" secondItem="dLB-9f-8ct" secondAttribute="centerY" id="YzN-4d-PgQ"/>
+                    <constraint firstItem="AZv-eI-g6c" firstAttribute="leading" secondItem="dLB-9f-8ct" secondAttribute="trailing" constant="10" id="eEh-Rb-YXh"/>
+                    <constraint firstAttribute="bottom" secondItem="dLB-9f-8ct" secondAttribute="bottom" constant="18" id="ens-aX-232"/>
+                    <constraint firstAttribute="trailing" secondItem="AZv-eI-g6c" secondAttribute="trailing" id="xKE-hn-a0d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="selectedImageView" destination="AZv-eI-g6c" id="K60-M5-6iO"/>
+                <outlet property="sortOptionNameLabel" destination="dLB-9f-8ct" id="Y9B-YD-Mst"/>
+            </connections>
+            <point key="canvasLocation" x="215.21739130434784" y="89.0625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Checkmark" width="20.5" height="20"/>
+    </resources>
+</document>

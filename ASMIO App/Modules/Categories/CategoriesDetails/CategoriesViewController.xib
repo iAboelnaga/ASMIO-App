@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesViewController" customModule="ASMIO_App" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryProductsCollectionView" destination="Zyx-za-orr" id="nEa-Hw-2zr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <tapGestureRecognizer id="rTM-Dv-EnB">
+            <connections>
+                <action selector="searchViewTapGestureRecognized:" destination="-1" id="9lK-O2-rXi"/>
+                <outlet property="delegate" destination="-1" id="ROf-se-g8P"/>
+            </connections>
+        </tapGestureRecognizer>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6Z-UE-bYK" customClass="BottomShadowView" customModule="ASMIO_App" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="127"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvs-qb-Dih">
+                            <rect key="frame" x="18" y="77" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="G64-xQ-A37"/>
+                                <constraint firstAttribute="width" constant="32" id="PTg-MH-bfP"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="BackBtn"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="M0u-2T-7wA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etz-78-Qee">
+                            <rect key="frame" x="364" y="77" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="QSA-Pt-1Vw"/>
+                                <constraint firstAttribute="height" constant="32" id="k8e-ow-Z44"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="SortBtn"/>
+                            <connections>
+                                <action selector="sortButtonTapped:" destination="-1" eventType="touchUpInside" id="lpU-sp-Xd8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-Lw-RwH">
+                            <rect key="frame" x="328" y="77" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="pQl-Sp-m38"/>
+                                <constraint firstAttribute="width" constant="32" id="xPV-Ke-ull"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="FilterBtn"/>
+                            <connections>
+                                <action selector="filterButtonTapped:" destination="-1" eventType="touchUpInside" id="R20-jU-LZu"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-o9-G4d">
+                            <rect key="frame" x="54" y="76" width="270" height="34"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon ionic-ios-search" translatesAutoresizingMaskIntoConstraints="NO" id="U6z-Sn-wyz">
+                                    <rect key="frame" x="10" y="9" width="16" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="K2S-qC-Qol"/>
+                                        <constraint firstAttribute="width" constant="16" id="r2d-Z5-CL4"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-qD-UWx">
+                                    <rect key="frame" x="32" y="10" width="145" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" name="LightTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="TabBarBackgroundColor"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="U6z-Sn-wyz" firstAttribute="centerY" secondItem="xfh-o9-G4d" secondAttribute="centerY" id="4AX-a1-BXk"/>
+                                <constraint firstItem="U6z-Sn-wyz" firstAttribute="leading" secondItem="xfh-o9-G4d" secondAttribute="leading" constant="10" id="7lg-eh-oYG"/>
+                                <constraint firstItem="Qoc-qD-UWx" firstAttribute="centerY" secondItem="U6z-Sn-wyz" secondAttribute="centerY" id="Q4U-uN-WpV"/>
+                                <constraint firstAttribute="height" constant="34" id="dg7-bk-AXp"/>
+                                <constraint firstItem="Qoc-qD-UWx" firstAttribute="leading" secondItem="U6z-Sn-wyz" secondAttribute="trailing" constant="6" id="kzO-fd-A2j"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Etz-78-Qee" firstAttribute="centerY" secondItem="jvs-qb-Dih" secondAttribute="centerY" id="1eH-TA-zHm"/>
+                        <constraint firstItem="Etz-78-Qee" firstAttribute="leading" secondItem="Toj-Lw-RwH" secondAttribute="trailing" constant="4" id="35y-NE-S1x"/>
+                        <constraint firstAttribute="trailing" secondItem="Etz-78-Qee" secondAttribute="trailing" constant="18" id="7lx-Y0-784"/>
+                        <constraint firstItem="jvs-qb-Dih" firstAttribute="leading" secondItem="S6Z-UE-bYK" secondAttribute="leading" constant="18" id="E83-me-jXj"/>
+                        <constraint firstItem="xfh-o9-G4d" firstAttribute="centerY" secondItem="jvs-qb-Dih" secondAttribute="centerY" id="Eg0-XL-0Wg"/>
+                        <constraint firstItem="xfh-o9-G4d" firstAttribute="leading" secondItem="jvs-qb-Dih" secondAttribute="trailing" constant="4" id="PHV-WB-wz1"/>
+                        <constraint firstAttribute="bottom" secondItem="jvs-qb-Dih" secondAttribute="bottom" constant="18" id="SMU-hM-xJd"/>
+                        <constraint firstItem="Toj-Lw-RwH" firstAttribute="centerY" secondItem="jvs-qb-Dih" secondAttribute="centerY" id="TW3-TP-pKK"/>
+                        <constraint firstItem="jvs-qb-Dih" firstAttribute="top" secondItem="S6Z-UE-bYK" secondAttribute="topMargin" constant="25" id="dXx-Ur-I6y"/>
+                        <constraint firstItem="Toj-Lw-RwH" firstAttribute="leading" secondItem="xfh-o9-G4d" secondAttribute="trailing" constant="4" id="rJu-N8-n2y"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-za-orr">
+                    <rect key="frame" x="18" y="139.5" width="378" height="704.5"/>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="13" minimumInteritemSpacing="13" id="gN1-h0-RCq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="S6Z-UE-bYK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AaR-Ne-2Ww"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zyx-za-orr" secondAttribute="trailing" constant="18" id="X6h-Af-QJt"/>
+                <constraint firstItem="Zyx-za-orr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="dQj-tu-ajG"/>
+                <constraint firstAttribute="trailing" secondItem="S6Z-UE-bYK" secondAttribute="trailing" id="q48-dW-bPz"/>
+                <constraint firstItem="S6Z-UE-bYK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sID-5v-Azc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Zyx-za-orr" secondAttribute="bottom" constant="18" id="vHq-Uy-gYT"/>
+                <constraint firstItem="Zyx-za-orr" firstAttribute="top" secondItem="S6Z-UE-bYK" secondAttribute="bottom" constant="12.5" id="yP6-bP-KAT"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackBtn" width="32" height="32"/>
+        <image name="FilterBtn" width="32" height="32"/>
+        <image name="Icon ionic-ios-search" width="16" height="16"/>
+        <image name="SortBtn" width="32" height="32"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightTextColor">
+            <color red="0.63099998235702515" green="0.66299998760223389" blue="0.76499998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TabBarBackgroundColor">
+            <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

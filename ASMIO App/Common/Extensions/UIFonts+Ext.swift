@@ -8,8 +8,10 @@
 import UIKit
 
 struct AppFontName {
-    static let regular = "lionel_text_steam"
-    static let bold = "Purissima-Bold"
+    static let regular = "Poppins"
+    static let bold = "Poppins-Bold"
+    static let medium = "Poppins-Medium"
+    static let semiBold = "Poppins-Semibold"
 }
 
 extension UIFontDescriptor.AttributeName {
@@ -29,8 +31,12 @@ extension UIFont {
     @objc class func poppinsFontWithWeight(ofSize size: CGFloat, weight: UIFont.Weight) -> UIFont {
         
         switch weight {
+        case .semibold:
+            return UIFont(name: AppFontName.semiBold, size: size)!
         case .bold:
             return UIFont(name: AppFontName.bold, size: size)!
+        case .medium:
+            return UIFont(name: AppFontName.medium, size: size)!
         default:
             return UIFont(name: AppFontName.regular, size: size)!
         }
@@ -49,6 +55,10 @@ extension UIFont {
             fontName = AppFontName.regular
         case "CTFontEmphasizedUsage", "CTFontBoldUsage":
             fontName = AppFontName.bold
+        case "CTFontMediumUsage":
+            fontName = AppFontName.medium
+        case "CTFontDemiUsage":
+            fontName = AppFontName.semiBold
         default:
             fontName = AppFontName.regular
         }

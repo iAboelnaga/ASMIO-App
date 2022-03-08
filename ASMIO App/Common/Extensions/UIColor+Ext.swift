@@ -9,7 +9,7 @@ import UIKit
 
 extension UIColor {
     
-    static let tabBarBackground = UIColor(named: "TabBarBackGroundColor")
+    static let tabBarBackground = UIColor(named: "TabBarBackgroundColor")
     static let backGroundColor = UIColor(named: "BackgroundColor")
     static let greenColor = UIColor(named: "GreenColor")
     static let lightTextColor = UIColor(named: "LightTextColor")
